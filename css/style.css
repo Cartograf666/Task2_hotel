@@ -1,4 +1,31 @@
 @import "fonts/stylesheet.css";
+body {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 24px;
+}
+
+h1 {
+    font-family: 'Quicksand';
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Quicksand';
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Montserrat';
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: bold;
+}
+
 .logo {
     position: absolute;
     width: 105.69px;
@@ -16,13 +43,50 @@
 }
 
 
-/* Rectangle with system colors */
+/* Grids */
+
+.indent {}
+
+.row {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.column {
+    margin: 127px 0px 0px 132px;
+    background-color: #BC9CFF;
+}
+
+
+/* Blocks site fonts */
+
+.sf__blocks {
+    display: flex;
+}
+
+
+/* Blocks with site colors */
+
+.sc__blocks {
+    font-family: 'Quicksand', 'Open Sans';
+    font-size: 19px;
+    line-height: 29px;
+}
+
+.sc__1-block {
+    display: flex;
+    align-items: center;
+}
+
+.sc__block-text {
+    margin: 1px 0px 0px 30px;
+}
 
 .sc__rect {
-    position: absolute;
     width: 70px;
     height: 70px;
     border-radius: 6px;
+    margin: 10px;
 }
 
 :root {
