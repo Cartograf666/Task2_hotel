@@ -63,8 +63,6 @@ h3 {
 
 /* Grids */
 
-.font-block {}
-
 .row {
     display: inline-flex;
     box-sizing: border-box;
