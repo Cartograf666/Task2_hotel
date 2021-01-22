@@ -1,4 +1,7 @@
 @import "fonts/stylesheet.css";
+
+/* Text blocks */
+
 body {
     font-family: 'Montserrat';
     font-size: 14px;
@@ -9,40 +12,27 @@ h1 {
     font-family: 'Quicksand';
     font-size: 24px;
     line-height: 30px;
-    font-weight: bold;
+    font-weight: 700;
     margin: 0em;
-}
-
-.H1-heading {
-    font-family: 'Montserrat';
-    font-size: 24px;
-    color: rgba(31, 32, 65, 0.25);
-    line-height: 29px;
-    text-align: right;
-}
-
-.H2-heading {
-    font-family: 'Montserrat';
-    font-size: 19px;
-    color: rgba(31, 32, 65, 0.25);
-    line-height: 29px;
-    text-align: right;
 }
 
 h2 {
     font-family: 'Quicksand';
     font-size: 19px;
     line-height: 24px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 h3 {
     font-family: 'Montserrat';
     font-size: 12px;
-    line-height: 15px;
-    font-weight: bold;
+    line-height: 14.63px;
+    font-weight: 700;
     text-transform: uppercase;
 }
+
+
+/* logo */
 
 .logo {
     position: absolute;
@@ -65,59 +55,87 @@ h3 {
 
 .row {
     display: inline-flex;
-    box-sizing: border-box;
     margin: 127px 0px 0px 132px;
-}
-
-.column2 {
-    display: inline-block;
-    width: 336px;
-    text-align: left;
-    margin: 0 0 0 26px;
-}
-
-.column1 {
-    display: inline-block;
-    text-align: right;
-    vertical-align: top;
 }
 
 
 /* Blocks site fonts */
 
-.sf__blocks {
+.fonts {
     margin: 10px 0px 0px 0px;
 }
 
-.sf__text-block {
+.fonts__heading {
+    display: inline-block;
     text-align: right;
-    margin: 0px 0px 50px 156px;
+    vertical-align: top;
+}
+
+.fonts__text-content {
+    display: inline-block;
+    width: 336px;
+    text-align: left;
+    margin: 0 0 0 26px;
+    vertical-align: top;
+}
+
+.fonts__content {
+    text-align: right;
+    margin: 0px 0px 50px 157px;
+}
+
+.fonts__h1 {
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(31, 32, 65, 0.25);
+    line-height: 29px;
+}
+
+.fonts__h2 {
+    font-family: 'Montserrat';
+    font-size: 19px;
+    color: rgba(31, 32, 65, 0.25);
+    line-height: 23.16px;
+}
+
+.fonts__h3 {
+    font-family: 'Montserrat';
+    font-size: 12px;
+    line-height: 14.63px;
+    font-weight: 400;
+    color: rgba(31, 32, 65, 0.25);
+    text-transform: uppercase;
 }
 
 
 /* Blocks with site colors */
 
-.sc__blocks {
+.colors {
     font-family: 'Quicksand', 'Open Sans';
     font-size: 19px;
     line-height: 29px;
     width: 550px;
 }
 
-.sc__1-block {
+.colors__content {
     display: flex;
     align-items: center;
 }
 
-.sc__block-text {
+.colors__content-text {
     margin: 1px 0px 0px 30px;
 }
 
-.sc__rect {
+.colors__content-rect {
     width: 70px;
     height: 70px;
     border-radius: 6px;
     margin: 10px;
+}
+
+.colors__content-text.padding {
+    padding: 0px 0px 1px 0px;
 }
 
 :root {
