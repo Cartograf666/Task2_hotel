@@ -69,6 +69,7 @@ h3 {
     display: inline-block;
     text-align: right;
     vertical-align: top;
+    color: rgba(31, 32, 65, 0.25);
 }
 
 .fonts__text-content {
@@ -77,6 +78,11 @@ h3 {
     text-align: left;
     margin: 0 0 0 26px;
     vertical-align: top;
+}
+
+.fonts__content.h3-correction {
+    padding: 1px 0px 0px 0px;
+    margin: 0px 0px 37px 0px;
 }
 
 .fonts__content {
@@ -111,11 +117,44 @@ h3 {
 
 /* Blocks with site colors */
 
-.colors {
-    font-family: 'Quicksand', 'Open Sans';
-    font-size: 19px;
-    line-height: 29px;
-    width: 550px;
+@media screen and (min-width: 1300px) {
+    .colors {
+        font-family: 'Quicksand', 'Open Sans';
+        font-size: 19px;
+        line-height: 29px;
+        width: 550px;
+    }
+}
+
+@media screen and (max-width: 1299px) {
+    .colors {
+        font-family: 'Quicksand', 'Open Sans';
+        font-size: 19px;
+        line-height: 29px;
+        width: 100%;
+    }
+    .fonts {
+        margin: 70px 0px 0px 0px;
+        width: 100%;
+    }
+    .row {
+        display: block;
+        margin: 135px 0px 0px 132px;
+    }
+    .fonts__heading {
+        width: 40px;
+        text-align: right;
+        vertical-align: top;
+        color: rgba(31, 32, 65, 0.25);
+    }
+    .fonts__content {
+        text-align: left;
+        margin: 0px 180px 50px 20px;
+    }
+    .fonts__content.h3-correction {
+        width: 40px;
+        margin: 0px 180px 50px 20px;
+    }
 }
 
 .colors__content {
