@@ -54,106 +54,92 @@ h3 {
 /* Grids */
 
 .row {
-    display: inline-flex;
-    margin: 127px 0px 0px 132px;
+    display: flex;
+    padding: 127px 132px;
 }
 
 
 /* Blocks site fonts */
 
 .fonts {
-    margin: 10px 0px 0px 0px;
-}
-
-.fonts__heading {
-    display: inline-block;
-    text-align: right;
-    vertical-align: top;
-    color: rgba(31, 32, 65, 0.25);
-}
-
-.fonts__text-content {
-    display: inline-block;
-    width: 336px;
-    text-align: left;
-    margin: 0 0 0 26px;
-    vertical-align: top;
-}
-
-.fonts__content.h3-correction {
-    padding: 1px 0px 0px 0px;
-    margin: 0px 0px 37px 0px;
+    padding: 10px 0px 0px 0px;
+    /* 
+    border: 1px solid black; */
 }
 
 .fonts__content {
+    display: flex;
     text-align: right;
-    margin: 0px 0px 50px 157px;
+    margin: 0px 0px 47px 155px;
 }
 
-.fonts__h1 {
+.fonts__content-text {
+    display: inline-block;
+    width: 336px;
+    text-align: left;
+    margin: 0 0 0 30px;
+    vertical-align: top;
+}
+
+.fonts__content-heading {
     font-family: 'Montserrat';
+    width: 40px;
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+    color: rgba(31, 32, 65, 0.25);
+}
+
+.fonts__content-h1 {
     font-size: 24px;
-    font-weight: 400;
-    color: rgba(31, 32, 65, 0.25);
     line-height: 29px;
+    padding: 1px 0px 0px 0px;
 }
 
-.fonts__h2 {
-    font-family: 'Montserrat';
+.fonts__content-text-h1 {
+    padding: 1px 0px 0px 0px;
+}
+
+.fonts__content-h2 {
     font-size: 19px;
-    color: rgba(31, 32, 65, 0.25);
     line-height: 23.16px;
+    padding: 2px 0px 0px 0px;
 }
 
-.fonts__h3 {
-    font-family: 'Montserrat';
+.fonts__content-text-h2 {
+    padding: 2px 0px 0px 0px;
+}
+
+.fonts__content-h3 {
     font-size: 12px;
     line-height: 14.63px;
-    font-weight: 400;
-    color: rgba(31, 32, 65, 0.25);
-    text-transform: uppercase;
+    padding: 4px 0px 0px 0px;
+}
+
+.fonts__content-text-h3 {
+    padding: 4px 0px 0px 0px;
+}
+
+.fonts__content-body {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0px 0px 0px 0px;
+}
+
+.fonts__content-text-body {
+    padding: 1px 0px 0px 0px;
 }
 
 
 /* Blocks with site colors */
 
-@media screen and (min-width: 1300px) {
-    .colors {
-        font-family: 'Quicksand', 'Open Sans';
-        font-size: 19px;
-        line-height: 29px;
-        width: 550px;
-    }
-}
-
-@media screen and (max-width: 1299px) {
-    .colors {
-        font-family: 'Quicksand', 'Open Sans';
-        font-size: 19px;
-        line-height: 29px;
-        width: 100%;
-    }
-    .fonts {
-        margin: 70px 0px 0px 0px;
-        width: 100%;
-    }
-    .row {
-        display: block;
-        margin: 135px 0px 0px 132px;
-    }
-    .fonts__heading {
-        width: 40px;
-        text-align: right;
-        vertical-align: top;
-        color: rgba(31, 32, 65, 0.25);
-    }
-    .fonts__content {
-        text-align: left;
-        margin: 0px 180px 50px 20px;
-    }
-    .fonts__content.h3-correction {
-        margin: 0px 180px 50px 20px;
-    }
+.colors {
+    font-family: 'Quicksand', 'Open Sans';
+    font-size: 19px;
+    line-height: 29px;
+    width: 548px;
+    /* 
+    border: 1px solid black; */
 }
 
 .colors__content {
@@ -184,4 +170,54 @@ h3 {
     --bg-dark-shade-5: rgba(31, 32, 65, 0.05);
     --purple-color: #BC9CFF;
     --green-color: #6FCF97;
+}
+
+
+/* Relative page */
+
+@media screen and (max-width: 1299px) {
+    .colors {
+        font-family: 'Quicksand', 'Open Sans';
+        font-size: 19px;
+        line-height: 29px;
+        width: 100%;
+    }
+    .fonts {
+        padding: 10px 0px 0px 0px;
+        width: 100%;
+    }
+    .fonts__heading {
+        width: 40px;
+        text-align: right;
+        vertical-align: top;
+        color: rgba(31, 32, 65, 0.25);
+    }
+}
+
+@media screen and (max-width: 764px) {
+    .logo-minimal {
+        position: absolute;
+        width: 48px;
+        height: 48px;
+        left: 50%;
+        top: 30px;
+        background-image: url(../svg-images/logo-minimal.svg);
+    }
+    .fonts {
+        margin: 70px 0px 0px 0px;
+        width: 100%;
+    }
+    .fonts__heading {
+        width: 40px;
+        text-align: right;
+        vertical-align: top;
+        color: rgba(31, 32, 65, 0.25);
+    }
+    .fonts__content {
+        text-align: left;
+        margin: 0px 180px 50px 20px;
+    }
+    .fonts__content.h3-correction {
+        margin: 0px 180px 50px 20px;
+    }
 }
